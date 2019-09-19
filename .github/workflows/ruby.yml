@@ -18,5 +18,6 @@ jobs:
         echo `pwd`
         echo `ls -l`
         # gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec rake
+        # bundle install --jobs 4 --retry 3
+        # bundle exec rake
+        ./berks-vendor.sh
