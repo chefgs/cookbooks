@@ -13,14 +13,13 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Build and test
+    - name: Build and Bundle Cookbooks and dependencies
       run: |
         echo `pwd`
         echo "\n"
         chmod +x berks-vendor.sh
         echo `ls -l`
-        
-        # gem install bundler
-        bundle install --jobs 4 --retry 3
-        # bundle exec rake
-        ./berks-vendor.sh
+
+        bundle install --jobs 4 --retry 3 # Install berks gem
+
+        ./berks-vendor.sh # Berks vendor cookbooks
