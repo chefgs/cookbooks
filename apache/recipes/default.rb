@@ -4,7 +4,7 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 package 'Install Apache' do
-  case node[:platform]
+  case node['platform']
   when 'redhat', 'centos'
     package_name 'httpd'
   when 'ubuntu', 'debian'
