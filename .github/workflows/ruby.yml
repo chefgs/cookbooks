@@ -30,3 +30,6 @@ jobs:
         echo `ls -l`
 
         ./berks-vendor.sh # Berks vendor cookbooks
+    - name: Package cookbooks to upload to artifact repo or Upload cookbook Chef server using berks upload
+      run: |
+        echo "Section to show it is possible TO DO"
