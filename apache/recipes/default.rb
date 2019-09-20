@@ -25,4 +25,3 @@ group 'chefusers'
 user 'bob' do
   group 'chefusers'
 end
-
