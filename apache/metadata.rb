@@ -3,7 +3,7 @@ maintainer 'Saravanan G'
 maintainer_email 'g.gsaravanan@gmail.com'
 license 'All Rights Reserved'
 description 'Apache Wrapper Cookbook'
-long_description 'Apache Wrapper Cookbook'
+# long_description 'Apache Wrapper Cookbook'
 version '0.1.0'
 chef_version '>= 14.0'
 
