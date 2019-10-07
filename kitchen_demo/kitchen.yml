@@ -1,0 +1,48 @@
+---
+driver:
+  name: gce
+  project: tensile-tenure-225805
+  zone: us-east1-c
+  email: g.gsaravanan@gmail.com
+  #service_account_name: 704858967734-compute@developer.gserviceaccount.com
+  tags:
+    - devteam
+    - test-kitchen
+  service_account_scopes:
+    - devstorage.read_write
+    - userinfo.email
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: true
+  product_name: chef
+
+verfier:
+  name: inspec
+
+transport:
+  username: g_gsaravanan
+  #elevated: true
+  ssh_key:
+    - ~/.ssh/g_gsaravanan
+
+platforms:
+  - name: centos-7
+    driver:
+      image_project: centos-cloud
+      image_name: centos-7-v20170124
+#  - name: ubuntu-16.04
+#    driver:
+#     image_project: ubuntu-os-cloud
+#     image_family: ubuntu-1604-lts
+#  - name: windows
+#    driver:
+#     image_project: windows-cloud
+#     image_name: windows-server-2012-r2-dc-v20170117
+#     disk_size: 50
+suites:
+  - name: default
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:

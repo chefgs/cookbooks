@@ -1,0 +1,5 @@
+﻿source 'https://rubygems.org'
+
+# gem 'kitchen-dokken', '~> 2.6', '>= 2.6.7'
+# gem 'vagrant', '~> 1.0.7'
+gem 'kitchen-gce', '~> 0.2.0'
