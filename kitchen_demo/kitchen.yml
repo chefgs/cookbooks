@@ -4,7 +4,6 @@ driver:
   project: tensile-tenure-225805
   zone: us-east1-c
   email: g.gsaravanan@gmail.com
-  #service_account_name: 704858967734-compute@developer.gserviceaccount.com
   tags:
     - devteam
     - test-kitchen
