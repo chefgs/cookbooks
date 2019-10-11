@@ -3,7 +3,7 @@
 Expecting the readers should have basic understanding Chef cookbooks and related development experience.
 ### Target audience for this demo,
 1. Chef developers or teams looking to implement Chef in-spec script
-2. Developers/testers looking to implement Chef Test Kitchen in real-time using Google Comupte Engine VM.
+2. Developers/testers looking to implement Chef Test Kitchen in real-time using Google Compute Engine VM.
 
 ## Objective:
 1. Cookbook in this repo, does create a file and a directory in /tmp path.
@@ -12,11 +12,11 @@ Expecting the readers should have basic understanding Chef cookbooks and related
 
 ## Pre-Requisites:
 1. Google Cloud Account
-2. Billing enabled Google Cloud Project
+2. Billing enabled Google Cloud Project. Refer [Google Cloud Docs](https://cloud.google.com/billing/docs/how-to/manage-billing-account)
 
 ## Steps to execute the DEMO.
 1. Checkout cookbooks repo
-2. Install chefdk & Google Cloud SDK according to your system OS.
+2. Install [ChefDK](https://downloads.chef.io/chefdk/) & [Google Cloud SDK](https://cloud.google.com/sdk/install) according to your system OS.
 3. Modify the project name in kitchen.yml file
 4. run the gcloud auth application-default login command which will create the credentials file for you.
 5. Execute command: `gcloud auth application-default login`
