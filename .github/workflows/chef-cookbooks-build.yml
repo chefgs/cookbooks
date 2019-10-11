@@ -1,4 +1,4 @@
-name: Ruby
+name: Build-Package Chef Cookbooks
 
 on: [push]
 
