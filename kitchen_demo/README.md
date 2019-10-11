@@ -33,4 +33,7 @@ Expecting the readers should have basic understanding Chef cookbooks and related
     - Execute cookbook in test vm: `chef exec kitchen converge`
     - Run the inspec test cases in test vm: `chef exec kitchen verify`
     - Cleanup the test vm to save costs:  `chef exec kitchen destroy`
+    - End-to-end test run, which includes all the above commands:  `chef exec kitchen test`
+13. In general, use the `kitchen test` subcommand to verify the end-to-end quality of a cookbook. 
+14. Use the `kitchen converge` and `kitchen verify` subcommands during the normal the day-to-day development of a cookbook
 
