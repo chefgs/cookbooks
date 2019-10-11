@@ -1,4 +1,4 @@
-name: CI
+name: Chef Test Kitchen Demo
 
 on:
   push:
