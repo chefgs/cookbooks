@@ -1,9 +1,9 @@
 ---
 driver:
   name: gce
-  project: tensile-tenure-225805
+  project: tensile-tenure-225805 # Need to be changed according to user
   zone: us-east1-c
-  email: g.gsaravanan@gmail.com
+  email: g.gsaravanan@gmail.com # Need to be changed according to user
   tags:
     - devteam
     - test-kitchen
@@ -20,10 +20,10 @@ verfier:
   name: inspec
 
 transport:
-  username: g_gsaravanan
+  username: g_gsaravanan # Need to be changed according to user
   #elevated: true
   ssh_key:
-    - ~/.ssh/g_gsaravanan
+    - ~/.ssh/g_gsaravanan # Need to be changed according to user
 
 platforms:
   - name: centos-7
