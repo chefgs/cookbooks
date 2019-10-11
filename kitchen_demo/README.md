@@ -25,8 +25,7 @@ Expecting the readers should have basic understanding Chef cookbooks and related
 8. This will create application_default_credentials.json in `USER_HOME/.config/global/application_default_credentials.json`
 9. The same credential json can be used for sub-sequent usage of same google cloud account in Chef kitchen
 10. Create ssh public key for the user_name. It creates the key in USER_HOME/.ssh path
-11. Upload the ssh public key to Google compute metadata. Either thru google cloud console or Gcloud SDK or API
-Instructions found here: https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys#addkey
+11. Upload the ssh public key to Google compute metadata. Either thru google cloud console or Gcloud SDK or API. [Instructions found here](https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys#addkey)
 12. Now the cookbook is ready to run the following chef kitchen commands
     - Unit test command: `chef exec rspec spec/`
     - Linting and syntax check: `chef exec cookstyle`
