@@ -18,3 +18,7 @@ end
 describe file('/tmp/kitchen_test.txt') do
   it { should exist }
 end
+
+describe directory('/tmp/kitchen_test') do
+  it { should exist }
+end
