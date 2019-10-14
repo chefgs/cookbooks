@@ -17,7 +17,7 @@ Expecting the readers should have basic understanding Chef cookbooks and related
 ## Steps to execute the DEMO.
 1. Checkout cookbooks repo
 2. Install [ChefDK](https://downloads.chef.io/chefdk/) & [Google Cloud SDK](https://cloud.google.com/sdk/install) according to your system OS.
-3. Modify the project name in kitchen.yml file
+3. Modify the project name, email and user_name associated with ssh_key in kitchen.yml file
 4. run the gcloud auth application-default login command which will create the credentials file for you.
 5. Execute command: `gcloud auth application-default login`
 6. Screen will prompt you for entering verification code
