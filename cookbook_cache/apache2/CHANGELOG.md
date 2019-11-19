@@ -4,9 +4,29 @@ This file is used to list changes made in each version of the apache2 cookbook.
 
 ## Unreleased
 
+## 8.0.2
+
+- default_apache_root_group: replace with ohai root_group
+
+## 8.0.1
+
+- Fix not reloading service when changes in port.conf / apache2.conf
+
+## 8.0.0 (2019-11-13)
+
+- Fix cache_dir permission so that modules can write in their cache_dir/module/ storage space
+- Latest Cookstyle changes in cookstyle 5.6.2
+- Fixed bug with freebsd and suse modules adding an array to an array
+- Fixed mod_ssl for suse
+- Fixed docroot paths for suse
+
+### Breaking Changes
+
+- Renamed `:cookbook` property for `apache2_default_site` resource to `:template_cookbook`.
+
 ## 7.1.1 (2019-08-07)
 
-Allow overwriting cookbook for apache2_mod templates using `template_cookbook` property.
+- Allow overwriting cookbook for apache2_mod templates using `template_cookbook` property.
 
 ## 7.1.0 (29-05-2019)
 

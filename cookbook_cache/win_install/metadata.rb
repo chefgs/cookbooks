@@ -1,9 +1,9 @@
 name 'win_install'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Saravanan G'
+maintainer_email 'g.gsaravanan@gmail.com'
 license 'All Rights Reserved'
-description 'Installs/Configures win_install'
-long_description 'Installs/Configures win_install'
+description 'Windows Wrapper Cookbook'
+# long_description 'Installs/Configures win_install'
 version '0.1.0'
 chef_version '>= 14.0'
 

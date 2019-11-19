@@ -1,15 +1,15 @@
 {
-  "name": "win_install",
-  "description": "Windows Wrapper Cookbook",
+  "name": "kitchen_demo",
+  "description": "Installs/Configures kitchen_demo",
   "long_description": "",
-  "maintainer": "Saravanan G",
+  "maintainer": "Saravanan",
   "maintainer_email": "g.gsaravanan@gmail.com",
   "license": "All Rights Reserved",
   "platforms": {
 
   },
   "dependencies": {
-    "sql_server": "~> 5.5.1"
+
   },
   "providing": {
 
