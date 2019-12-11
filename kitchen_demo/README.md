@@ -1,4 +1,4 @@
-# Chef Test Kitchen Demo
+# Chef Test Kitchen Demo using GCP Compute Engine
 ## Introduction:
 Expecting the readers should have basic understanding Chef cookbooks and related development experience.
 ### Target audience for this demo,
